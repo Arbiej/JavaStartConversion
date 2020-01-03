@@ -1,0 +1,14 @@
+class Time {
+    int HoursToMinutes(int a){
+        return a*60;
+    }
+    int MinutesToSeconds(int a){
+        return a*60;
+    }
+    int SecondsToMiliseconds(int a){
+        return a*1000;
+    }
+
+
+
+}
