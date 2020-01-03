@@ -1,0 +1,23 @@
+class Convert {
+    public static void main(String[] args) {
+        double x=91.5;
+        int y=14;
+        Length length = new Length();
+        double cmToMeter = length.CmToMeter(x);
+        System.out.println(x+" cm is"+ " "+ cmToMeter+" meters");
+        double meterToCm = length.MeterToCm(x);
+        System.out.println(x+" meters is " + meterToCm+ " cm");
+        double meterToMm = length.MeterToMm(x);
+        System.out.println(x+" meters is " + meterToMm+ " mm");
+        double mmToMeter = length.MmToMeter(x);
+        System.out.println(x+" mm is " + mmToMeter+ " meters");
+
+        Time time = new Time();
+        int hoursToMinutes = time.HoursToMinutes(y);
+        System.out.println(y+" hours is "+ hoursToMinutes+" minutes");
+        int minutesToSeconds = time.MinutesToSeconds(y);
+        System.out.println(y+" minutes is "+ minutesToSeconds+" seconds");
+        int secondsToMiliseconds = time.SecondsToMiliseconds(y);
+        System.out.println(y+" seconds is "+ secondsToMiliseconds+" miliseconds");
+    }
+}
